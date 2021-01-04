@@ -1,0 +1,82 @@
+.navbar {
+  background-color: black;
+}
+
+.footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: black; /*182aba;*/
+}
+
+.controls-bar {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-evenly;
+}
+
+.bars-size-control {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.bars-size-control > p {
+  color: white;
+  text-align: center;
+  font-family: Bebas Neue;
+  font-size: 1.15rem;
+  line-height: 1rem;
+}
+
+.btn {
+  display: block;
+  outline: none;
+  cursor: pointer;
+  color: white;
+  background-color: transparent;
+  border: 0.1px solid white;
+  font-family: Bebas Neue;
+  padding: 0.25rem;
+  margin: 0.5rem 0rem;
+  font-size: 1.15rem;
+}
+
+.btn:hover {
+  background: white;
+  color: #4be894;
+  transition: all 0.3s ease-out;
+}
+
+.visualizer-container {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  height: 100%;
+}
+
+.array-container {
+  display: flex;
+  justify-content: center;
+}
+
+.array-bar {
+  background-color: orange;
+  border-radius: 0.25rem;
+  margin: 0.1rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.5vmin;
+}
+
+@media only screen and (max-width: 720px) {
+  .btn {
+    padding: 0.1rem;
+  }
+
+  .array-bar {
+    font-size: 1.1vmin;
+  }
+}
